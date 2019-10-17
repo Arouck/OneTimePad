@@ -46,6 +46,7 @@ class OneTimePad
         void generateKey(int size)
         {
             string key = "";
+            srand(185466458);
             for (int i = 0; i < size; i++)
             {
                 key += static_cast<char>(rand() % 126+32);
